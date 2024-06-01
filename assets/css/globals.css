@@ -1,0 +1,41 @@
+/* @function rem(--value){
+    --remvalue: --value;
+    --remvalue: (--value/16) + rem;
+    @return: --value;
+} */
+
+:root{
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-background: #f0f0f0;
+    --icon-color: #656565;
+    --icon-width: 20px;
+    --icon-background-color: #e4e4e4;
+    --active-color: #1b75e5;
+    --primary-padding: 10px;
+    --sidebar-width: 360px;
+    --feed-width: 680px;
+    --facebook-services-element-size: 40px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--primary-background);
+    font-family: var(--primary-font);
+
+    &::before{
+        content: "";
+        display: block;
+        height: 80px;
+    }
+}
+.page-content{
+    .page-content__left,.page-content__right{
+        .wrapper{
+            position: sticky;
+            top: 80px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.facebook-shortcuts{
+    .facebook-shortcuts__shortcut{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 10px 0;
+        i{
+            font-size: 1.4rem;
+            color: var(--active-color);
+        }
+    }
+}
+.sepreator{
+    border-top: 1px solid #aaa;
+    padding: var(--primary-padding);
+    margin-top: var(--primary-padding);
+}
+
+.facebook-favorites{
+    .facebook-favorites__favorite{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 5px 0;
+        .favorite-image{
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}

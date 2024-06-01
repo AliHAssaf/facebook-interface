@@ -1,0 +1,84 @@
+.news-feed{
+    background-color: white;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px #00000020;
+    .news-feed__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        > div:nth-child(2){
+            flex: 1;
+        }
+        .news-feed__header__post-userimage img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .news-feed__header__post-meta{
+            .news-feed__header__post-meta__name{font-weight: 600;}
+            .news-feed__header__post-meta__info{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+        .news-feed__header__options{
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+            top: -15px;
+            line-height: 0;
+        }
+    }
+    .news-feed__feed{
+        .news-feed__feed__text, .news-feed__feed__image{
+            margin-top: var(--primary-padding);
+        }
+        .news-feed__feed__image{
+            border-radius: 5px;
+        }
+    }
+    .news-feed__footer{
+        padding-top: var(--primary-padding);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .news-feed__footer__reactions{
+            font-size: 1.2rem;
+            color: var(--icon-color);
+            cursor: pointer;
+        }
+    }
+    .news-feed__comment-box{
+        padding-top: var(--primary-padding);
+        .input-box__text{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            label{
+                width: 100%;
+                input{
+                    border: none;
+                    height: 30px;
+                    border-radius: 20px;
+                    padding-left: 20px;
+                    background-color: #efefef;
+                    width: inherit;
+                    font-size: .8rem;
+                }
+            }
+            img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+}

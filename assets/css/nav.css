@@ -1,0 +1,78 @@
+nav, .nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--primary-padding);
+    box-shadow: 0 3px 8px #0000000d;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    .nav__left{
+        flex: 25% 0 0;
+        max-width: var(--sidebar-width);
+        .input-box__text{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            label{
+                width: 100%;
+                input{
+                    border: none;
+                    height: 40px;
+                    border-radius: 20px;
+                    padding: 20px;
+                    background-color: #efefef;
+                    width: inherit;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .nav__middle{
+        flex: 50% 0 0;
+        max-width: var(--feed-width);
+        .facebook-icons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.8rem;
+            color: var(--icon-color);
+            .active{
+                color: var(--active-color);
+            }
+        }
+    }
+    .nav__right{
+        flex: 25% 0 0;
+        max-width: var(--sidebar-width);
+        .facebook-services{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 10px;
+            .user-icon{
+                .img-rounded{
+                    width: var(--facebook-services-element-size);
+                    height: var(--facebook-services-element-size);
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
+            .facebook-services__service{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: var(--icon-background-color);
+                font-size: 1.4rem;
+                width: var(--facebook-services-element-size);
+                height: var(--facebook-services-element-size);
+                border-radius: 50%;
+            }
+        }
+    }
+}

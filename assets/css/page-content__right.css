@@ -1,0 +1,50 @@
+.facebook-sponsers{
+    .facebook-sponsers__sponser{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+        margin: 10px 0;
+
+        img{
+            max-width: 115px;
+            height: 90px;
+            border-radius: 5px;
+        }
+    }
+}
+
+.facebook-pages{
+    .facebook-pages__page{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 10px 0;
+        img{
+            width: 40px;
+            height: 40px;
+            /* border-radius: 50%; */
+            object-fit: cover;
+        }
+    }
+}
+.facebook-contacts{
+    .facebook-contacts__contact{
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        gap: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        padding: 5px 0;
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+}
